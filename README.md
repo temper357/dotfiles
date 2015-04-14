@@ -1,1 +1,2 @@
-# Backup of my dotfiles on mac
+## Backup of my dotfiles
+vim + tmux + prezto
