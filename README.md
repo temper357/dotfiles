@@ -1,1 +1,1 @@
-dotfiles of my mac
+# Backup of my dotfiles on mac
