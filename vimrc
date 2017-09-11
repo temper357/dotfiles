@@ -1,9 +1,8 @@
 set nocompatible
 
 filetype off
-set rtp+=~/.vim/bundle/Vundle.vim/
-call vundle#rc()
-
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 
 " Let Vundle manage Vundle
 Bundle 'gmarik/vundle'
@@ -55,7 +54,8 @@ Bundle 'flowtype/vim-flow'
 " Bundle 'Shougo/vimproc.vim'
 " Bundle 'Shougo/unite.vim'
 
-filetype on
+call vundle#end()
+filetype plugin indent on
 
 set shell=/bin/bash
 runtime macros/matchit.vim
