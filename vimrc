@@ -1,7 +1,7 @@
 set nocompatible
 
 filetype off
-set rtp+=~/.vim/bundle/vundle/
+set rtp+=~/.vim/bundle/Vundle.vim/
 call vundle#rc()
 
 
@@ -49,6 +49,9 @@ Bundle 'othree/html5-syntax.vim'
 Bundle 'tpope/vim-repeat'
 Bundle 'tpope/vim-unimpaired'
 Bundle 'Peeja/vim-cdo'
+Bundle 'editorconfig/editorconfig-vim'
+Bundle 'StanAngeloff/php.vim'
+Bundle 'flowtype/vim-flow'
 " Bundle 'Shougo/vimproc.vim'
 " Bundle 'Shougo/unite.vim'
 
@@ -96,6 +99,7 @@ map <F10> :NERDTreeToggle<CR>
 " Current file in nerdtree
 map <F9> :NERDTreeFind<CR>
 let g:NERDTreeShowHidden=1
+let NERDTreeIgnore=['\.DS_Store$']
 
 " Reduce timeout after <ESC> is recvd. This is only a good idea on fast links.
 set ttimeout
@@ -249,6 +253,7 @@ colorscheme cobalt2
 " colorscheme seti
 set background=dark
 set encoding=utf-8
+set fileencodings=ucs-bom,utf-8,cp936,gbk,big5,euc-jp,euc-kr,latin1
 
 " Font
 set guifont=Consolas:h14
@@ -306,7 +311,7 @@ set splitbelow
 set splitright
 
 " configure syntastic syntax checking to check on open as well as save
-let g:syntastic_javascript_checkers = ['eslint']
+" let g:syntastic_javascript_checkers = ['eslint']
 " let g:syntastic_javascript_checkers = ['jshint']
 let g:syntastic_enable_highlighting=0
 
@@ -366,4 +371,8 @@ let g:UltiSnipsEditSplit="vertical"
 "   source ~/.vimrc.local
 " endif
 
+" 显示特殊字符(区分 tab 和 空格)
+set list
+set listchars=tab:,.,trail:.,extends:#,nbsp:. " Highlight problematic whitespace
 
+let g:flow#enable = 1
