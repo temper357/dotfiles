@@ -2,8 +2,8 @@
 # Use with caution
 #
 
-alias vim='/Applications/MacVim.app/Contents/MacOS/vim'
-alias vi='/Applications/MacVim.app/Contents/MacOS/vim'
+# alias vim='/Applications/MacVim.app/Contents/MacOS/vim'
+# alias vi='/Applications/MacVim.app/Contents/MacOS/vim'
 
 # ls, the common ones I use a lot shortened for rapid fire usage
 alias l='ls -lFh'     #size,show type,human readable

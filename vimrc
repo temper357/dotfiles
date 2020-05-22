@@ -29,7 +29,7 @@ Bundle "myusuf3/numbers.vim"
 Bundle 'christoomey/vim-tmux-navigator'
 Bundle 'jgdavey/tslime.vim'
 Bundle 'henrik/vim-qargs'
-Bundle 'kchmck/vim-coffee-script'
+" Bundle 'kchmck/vim-coffee-script'
 Bundle 'mxw/vim-jsx'
 Bundle 'pangloss/vim-javascript'
 Bundle 'gertjanreynaert/cobalt2-vim-theme'
@@ -40,7 +40,7 @@ Bundle 'mattn/emmet-vim'
 Bundle 'vim-scripts/BufOnly.vim'
 Bundle 'terryma/vim-multiple-cursors'
 Bundle 'Raimondi/delimitMate'
-Bundle 'SirVer/ultisnips'
+" Bundle 'SirVer/ultisnips'
 Bundle 'honza/vim-snippets'
 Bundle 'hail2u/vim-css3-syntax'
 Bundle 'othree/html5.vim'
@@ -49,8 +49,12 @@ Bundle 'tpope/vim-repeat'
 Bundle 'tpope/vim-unimpaired'
 Bundle 'Peeja/vim-cdo'
 Bundle 'editorconfig/editorconfig-vim'
-Bundle 'StanAngeloff/php.vim'
+" Bundle 'StanAngeloff/php.vim'
 Bundle 'flowtype/vim-flow'
+Plugin 'leafgarland/typescript-vim'
+Plugin 'peitalin/vim-jsx-typescript'
+" Plugin 'w0rp/ale'
+Plugin 'dart-lang/dart-vim-plugin'
 " Bundle 'Shougo/vimproc.vim'
 " Bundle 'Shougo/unite.vim'
 
@@ -376,3 +380,8 @@ set list
 set listchars=tab:,.,trail:.,extends:#,nbsp:. " Highlight problematic whitespace
 
 let g:flow#enable = 1
+
+" AlE linter
+" let g:ale_linters = {
+" \   'javascript': ['eslint'],
+" \}
